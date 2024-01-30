@@ -1,0 +1,22 @@
+body {
+    background-color: #D5FF00;
+}
+
+h1 {
+    color: #994C00;
+}
+
+.middle {
+    text-align: center;
+}
+
+.blueText {
+    color: #0000FF;
+    size: 3;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.lefty {
+    text-align: right;
+}
