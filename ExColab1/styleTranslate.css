@@ -1,0 +1,36 @@
+#transY {
+    animation-name: goDown;
+    animation-duration: 5s;
+    transform: translateY(250px);
+}
+
+#ball {
+    width: 50px;
+}
+
+#ball{ 
+    animation-name: slidein;
+    animation-duration: 5s;
+}
+
+@keyframes slidein {
+    0% {
+        transform: translateX(0px);
+    }
+    50% {
+        transform: translateX(250px);
+    } 
+    100%{
+        transform: translateX(0px);
+    }
+} 
+
+@keyframes goDown {
+    0%{
+        transform: translateY(0px);
+    }
+    100%
+    {
+        transform: translateY(250px);
+    }
+}
