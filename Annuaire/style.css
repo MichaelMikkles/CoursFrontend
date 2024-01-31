@@ -1,0 +1,46 @@
+#formAdder {
+    background-color: rgb(96, 242, 135);
+    width:auto;
+    border-radius: 3px;
+    border-color: black;
+    border-style:dashed;
+    display: none;
+}
+
+#annuaire {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#annuaire caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#annuaire th, #annuaire td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+#annuaire th {
+    background-color: #f2f2f2;
+}
+
+#annuaire tr:nth-child(even) {
+    background-color:rgb(177, 255, 177);
+}
+
+#annuaire tr:hover {
+    background-color: #f5f5f5;
+}
+
+#annuaire .mod{
+    width: 0;
+}
+
+#annuaire .elim{
+    width: 0;
+}

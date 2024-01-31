@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title >Annuaire</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <table id="annuaire">
+            <caption>Gestion d'un Annuaire</caption>
+            <tr>
+                <th> Nom </th>
+                <th> Prenom </th>
+                <th> Telephone </th>
+                <th> Adresse Mail </th>
+                <th> </th>
+                <th> </th>
+            </tr>
+        </table>
+        <button id="adder">Ajouter</button>
+        <form id="formAdder" onSubmit="ajouter(event)">
+            <label for="Nom"> Nom :</labe>
+            <input type="texte" placeholder="text" id="Nom" >
+            <br>
+            <label for="Prenom"> Prenom :</labe>
+            <input type="texte" placeholder="text" id="Prenom" >
+            <br>
+            <label for="Telephone"> Telephone :</labe>
+            <input type="tel" placeholder="text" id="Telephone" >
+            <br>
+            <label for="Mail"> Adresse Mail :</labe>
+            <input type="texte" placeholder="text" id="Mail" >
+            <br>
+            <label for="Add"> </labe>
+            <button id="Add">Envoyer</input>
+        </form>
+        <script src="gestion.js"></script>
+    </body>
+</html>
