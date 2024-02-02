@@ -2,16 +2,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Factorial Calculator >:3</title>
+    <link href="../Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
 <body>
     <div>
-        <h1>CALCUL >:D</h1>
+        <h1>CALCUL Factorial</h1>
     </div>
-    <div>
-        <form onsubmit="factoriel(event)" difer>
+    <div class="container bg-primary text-center">
+        <form onsubmit="factoriel(event)" class="form-control">
             <label for="numerito">Envoyer un nombre:</label>
             <input type="number" placeholder="#Naturel+" id="numerito">
-            <button type="submit">Calculer Factorial</button>
+            <button type="submit"> Calculer</button>
         </form>
         <div id="result"></div>
     </div>

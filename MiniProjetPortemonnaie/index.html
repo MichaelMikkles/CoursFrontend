@@ -1,0 +1,121 @@
+<!--Auteur: Michael Moreno-->
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Journal Portemonnaie</title>
+        <link rel="stylesheet" href="bootstrap.min.css">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header class="navbar-text">
+            <h1>Journal Portemonnaie</h1>
+            <p>Montant disponible : €<span id="montantDisponible">0.00</span></p>
+            <img src="arrow.svg" alt="Effacer le localStorage" onclick="effacerLocalStorage()">
+        </header>
+
+        <div class="content">
+            <aside class="container-sm"></aside>
+
+            <div class="container">
+                <form class="lister" id="operationForm">
+                    <h2>Ajouter une opération</h2>
+                    <table>
+                        <tr>
+                            <td>       
+                                <label for="dateOperation">Date de réalisation :*</label>
+                            </td>
+                            <td>       
+                                <input type="date" id="dateOperation" name="dateOperation" required>
+                            </td>
+                        </tr> 
+
+                        <tr>
+                            <td>
+                                <span>Opération  :*</span>
+                            </td>
+                            <td>   
+                                <input type="radio" id="typeOperationDepense" name="typeOperationDepense" required> Dépense</input>
+                                <input type="radio" id="typeOperationProvision" name="typeOperationProvision" required> Provision</input>
+                            </td>
+                        </tr> 
+                        
+                        <tr>
+                            <td>
+                                <label for="beneficiaire">Bénéficiaire :*</label>
+                            </td>
+                            <td>   
+                                <input type="text" id="beneficiaire" name="beneficiaire" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td> 
+                                <label for="libelleOperation">Libellé d'opération :*</label>
+                            </td>
+                            <td>   
+                                <input type="text" id="libelleOperation" name="libelleOperation" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="montantOperation">Montant:* €</label>
+                            </td>
+                            <td>   
+                                <input type="number" id="montantOperation" name="montantOperation" step="0.01" required>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <label for="justificatifOperation">Justificatif d'opération :</label>
+                            </td>
+                            <td>   
+                                <input type="file" class="form-control-file" id="justificatifOperation" name="justificatifOperation">
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <button type="button" onclick="soumettreFormulaire(event)">Sauvegarder</button>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <small class="text-muted">* champs obligatoires</small>
+                            </td>
+                        </tr>
+                    </table>
+                </form>
+                    
+
+                <table class="operations table table-striped" id="tableOperations">
+                    <thead>
+                        <tr>
+                            <th scope="col">Date</th>
+                            <th scope="col">Operation</th>
+                            <th scope="col">Bénéficiaire</th>
+                            <th scope="col">Libellé</th>
+                            <th scope="col">Montant</th>
+                            <th scope="col">Justificatif</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    </tbody>
+                </table>
+
+                <table class="historique">
+                    <!-- Ajoute ici les éléments de ta table d'historique -->
+                </table>
+            </div>
+        </div>
+
+        
+
+        <script src="script.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>

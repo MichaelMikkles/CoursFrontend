@@ -48,6 +48,16 @@ function supprimerLigne(button){
     table.deleteRow(rowIndex);
 }
 
+/*********** LOCAL STORAGE ***********/
+function guardarFilaEnLocalStorage(){
+
+}
+
+function cargarFilaLocalStorage(){
+
+}
+ /************ FIN LOCAL STORAGE  ***********/
+
 document.getElementById('adder').addEventListener('click', function() {
     //Montrer ou cacher le formulaire pour envoyer les donnes
     var form = document.querySelector('form');

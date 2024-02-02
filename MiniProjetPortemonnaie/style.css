@@ -1,0 +1,18 @@
+.content{
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar-text{
+    background-color: black;
+    color: aliceblue;
+}
+
+.container-sm{
+    background-color: crimson;
+    max-width: 10%;
+    margin: 0%;
+    padding: 0%;
+    min-width: 3%;
+}
+

@@ -2,10 +2,11 @@
 <html>
     <head>
         <title >Annuaire</title>
+        <link href="../Bootstrap/bootstrap-5.3.2-dist/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <table id="annuaire">
+        <table id="annuaire" class="table">
             <caption>Gestion d'un Annuaire</caption>
             <tr>
                 <th> Nom </th>
@@ -17,6 +18,7 @@
             </tr>
         </table>
         <button id="adder">Ajouter</button>
+        <button id="save" onClick="guardarFilaEnLocalStorage()">Save</button>
         <form id="formAdder" onSubmit="ajouter(event)">
             <label for="Nom"> Nom :</labe>
             <input type="texte" placeholder="text" id="Nom" >

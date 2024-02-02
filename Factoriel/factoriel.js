@@ -12,6 +12,6 @@ function factoriel(event) {
         document.getElementById("result").innerHTML=introduced;
     }
     else{
-        document.getElementById("result").innerHTML="Nombre doit etre positive et plus que 0";
+        document.getElementById("result").innerHTML="Nombre doit etre plus que 0";
     }
 }
